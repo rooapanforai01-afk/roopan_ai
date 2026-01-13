@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESPERTINE | Luxury Fashion & Lifestyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">VESPERTINE</div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#lookbook" class="nav-link">Lookbook</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <span id="userInfo" style="display: none; color: #d4af37; font-weight: 600; font-size: 0.9rem; margin-left: 15px;">
+                    <span id="userName"></span> | <button id="logoutBtn" style="background: none; border: none; color: #d4af37; cursor: pointer; text-decoration: underline; font-size: 0.9rem;">Logout</button>
+                </span>
+                <a href="login.html" id="authBtn" class="nav-link" style="color: #d4af37; font-weight: 600;">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="https://images.unsplash.com/photo-1591047990852-37ea2e0f7abd?w=1600&q=80" alt="Hero Background" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Redefine Your Story</h1>
+            <p class="hero-tagline">Luxury Fashion Crafted for the Modern Visionary</p>
+            <button class="cta-btn hero-cta" onclick="scrollToSection('collections')">Explore Collection</button>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('collections')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Tabs Navigation -->
+    <section id="collections" class="tabs-section">
+        <div class="tabs-wrapper">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="collections-tab">Collections</button>
+                <button class="tab-btn" data-tab="about-tab">About the Brand</button>
+                <button class="tab-btn" data-tab="lookbook-tab">Featured Styles</button>
+            </div>
+
+            <!-- Collections Tab -->
+            <div id="collections-tab" class="tab-content active">
+                <div class="collections-grid">
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595777707802-52b71ef0f69e?w=500&q=80" alt="Silk Essence Dress">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Silk Essence</h3>
+                            <p class="product-category">Evening Collection</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551028719-00167b16ebc5?w=500&q=80" alt="Urban Elegance Jacket">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Urban Elegance</h3>
+                            <p class="product-category">Contemporary Wear</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1609869321951-ca9b5ac2bdf4?w=500&q=80" alt="Minimalist Capsule">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Minimalist Capsule</h3>
+                            <p class="product-category">Essential Collection</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&q=80" alt="Luxe Knitwear">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Luxe Knitwear</h3>
+                            <p class="product-category">Winter Elegance</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595614124856-38c4ee5fa45d?w=500&q=80" alt="Statement Accessories">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Statement Pieces</h3>
+                            <p class="product-category">Accessories</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-aos>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Designer Footwear">
+                            <div class="product-overlay">
+                                <span class="overlay-text">View Details</span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Designer Footwear</h3>
+                            <p class="product-category">Luxury Collection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about-tab" class="tab-content">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Brand Story</h2>
+                        <p>Founded in 2015, VESPERTINE represents the pinnacle of contemporary luxury fashion. We believe that true elegance transcends trends, embodying a philosophy of timeless craftsmanship combined with innovative design.</p>
+                        <p>Each piece in our collection is meticulously crafted by master artisans who understand the delicate balance between tradition and modernity. We source premium materials from sustainable suppliers worldwide, ensuring that luxury doesn't compromise our planet's future.</p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <h4>Artisan Crafted</h4>
+                                <p>Handcrafted by master artisans with decades of expertise</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>Sustainable Luxury</h4>
+                                <p>Premium materials sourced from ethical suppliers</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>Timeless Design</h4>
+                                <p>Collections that transcend seasonal trends</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80" alt="Brand Story">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lookbook Tab -->
+            <div id="lookbook-tab" class="tab-content">
+                <div class="lookbook-grid">
+                    <div class="lookbook-item" data-aos>
+                        <img src="https://images.unsplash.com/photo-1490481651594-2173da5fb370?w=800&q=80" alt="Spring Collection">
+                        <div class="lookbook-overlay">
+                            <h3>Spring Collection</h3>
+                            <p>Light, breathable elegance for the season</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-aos>
+                        <img src="https://images.unsplash.com/photo-1515321318423-f06f285504d3?w=800&q=80" alt="Fall Collection">
+                        <div class="lookbook-overlay">
+                            <h3>Fall Collection</h3>
+                            <p>Rich textures and sophisticated layering</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-aos>
+                        <img src="https://images.unsplash.com/photo-1550639524-6c03bf173ce0?w=800&q=80" alt="Evening Wear">
+                        <div class="lookbook-overlay">
+                            <h3>Evening Wear</h3>
+                            <p>Red carpet ready sophistication</p>
+                        </div>
+                    </div>
+                    <div class="lookbook-item" data-aos>
+                        <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&q=80" alt="Bridal">
+                        <div class="lookbook-overlay">
+                            <h3>Bridal Collection</h3>
+                            <p>Timeless beauty for your special day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="cta-content">
+            <h2>Experience Luxury</h2>
+            <p>Discover our latest collections and join our community of style enthusiasts</p>
+            <div class="cta-buttons">
+                <button class="cta-btn primary-btn" onclick="handleCTA('shop')">Shop Collection</button>
+                <button class="cta-btn secondary-btn" onclick="handleCTA('subscribe')">Subscribe to Updates</button>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon" title="Instagram">f</a>
+                <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                <a href="#" class="social-icon" title="Pinterest">P</a>
+                <a href="#" class="social-icon" title="LinkedIn">in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>VESPERTINE</h4>
+                <p>Redefining luxury for the modern visionary</p>
+            </div>
+            <div class="footer-section">
+                <h4>Collections</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                    <li><a href="#">Limited Edition</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 VESPERTINE. All rights reserved. Crafted with elegance.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // ============================================
+        // AUTHENTICATION SYSTEM
+        // ============================================
+
+        function checkLoginStatus() {
+            const loggedInUser = localStorage.getItem('loggedInUser');
+            const authBtn = document.getElementById('authBtn');
+            const userInfo = document.getElementById('userInfo');
+            const userName = document.getElementById('userName');
+            const logoutBtn = document.getElementById('logoutBtn');
+
+            if (loggedInUser) {
+                const user = JSON.parse(loggedInUser);
+                authBtn.style.display = 'none';
+                userInfo.style.display = 'inline-block';
+                userName.textContent = '👤 ' + user.name;
+                logoutBtn.onclick = handleLogout;
+            } else {
+                authBtn.style.display = 'inline-block';
+                userInfo.style.display = 'none';
+            }
+        }
+
+        function handleLogout() {
+            if (confirm('Are you sure you want to logout?')) {
+                localStorage.removeItem('loggedInUser');
+                checkLoginStatus();
+                alert('✅ You have been logged out successfully!');
+            }
+        }
+
+        // Check login status on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkLoginStatus();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
